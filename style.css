@@ -1,0 +1,127 @@
+:root {
+  --color-neutral: #3498db;   
+  --color-wrong: #e74c3c;     
+  --color-correct: #2ecc71;
+ }
+
+ body{
+   --hue: var(--color-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: #1A002D; 
+ }
+
+ body.correct {
+  --hue: var(--color-correct);
+}
+
+body.wrong {
+  --hue: var(--color-wrong);
+}
+
+ .container{
+   width: 800px;
+   max-width: 80%;
+   background-color: beige;
+   border-radius: 5px;
+   padding: 10px;
+   box-shadow: 0 0 10px 2px;
+ }
+
+ .btn-grid{
+   display: grid;
+   grid-template-columns: repeat(2,auto);
+   gap: 10px;
+   margin: 20px 0;
+ }
+
+ .btn{
+   border: 1px solid #1A002D;
+   background-color: #7747a7;
+   border-radius: 5px;
+   padding: 5px 10px;
+   color: white;
+   outline: none;
+   cursor: pointer;
+ }
+
+ .btn:hover{
+   border-color: black;
+ }
+
+ .start-btn,
+ .next-btn{
+   font-size: 1.5rem;
+   font-weight: bold;
+   padding: 10px 20px;
+   cursor: pointer;
+ }
+
+ .controls{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #quiz-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1A002D;
+  margin-bottom: 15px;
+}
+
+
+ .hide{
+   display: none;
+ }
+
+ .correct {
+  background-color: var(--color-correct);  
+  color: white; 
+}
+
+.wrong {
+  background-color: var(--color-wrong); 
+  color: white;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#right-answers {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+button.restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button.restart:hover {
+  background-color: #45a049;
+}
+
